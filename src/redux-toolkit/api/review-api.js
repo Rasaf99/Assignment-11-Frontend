@@ -5,7 +5,9 @@ export const ReviewApi = createApi({
 
     reducerPath: "ReviewApi",
 
-    baseQuery: fetchBaseQuery({ baseUrl: `http://65.0.109.170:2000/api/review` }),
+    baseQuery: fetchBaseQuery({ baseUrl: `${process.env.REACT_APP_BACKEND_HOST}/api/review` }),
+
+
 
     tagTypes:['review'],
 

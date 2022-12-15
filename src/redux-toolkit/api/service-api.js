@@ -5,7 +5,9 @@ export const ServiceApi = createApi({
 
     reducerPath: "ServiceApi",
 
-    baseQuery: fetchBaseQuery({ baseUrl: `http://65.0.109.170:2000/api/service` }),
+    baseQuery: fetchBaseQuery({ baseUrl: `${process.env.REACT_APP_BACKEND_HOST}/api/service` }),
+
+
 
     tagTypes:['service'],
 
